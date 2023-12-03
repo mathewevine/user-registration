@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet"/>
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="bg-container">
+            <div class="left-cont">
+                <img src="./images/registration.jpg" alt="registration" class="registration" />
+            </div>
+            <form id="reg-form" action="/submit" method="post">
+                <h1 class="form-head">Registration</h1>
+                <div class="form-content">
+                    <label for="name">Name <span class="required" id="nameError"></span></label>
+                    <input type="text" name="name" id="userName"/>
+                </div>
+                <div class="form-content">
+                    <label for="mobile">Mobile <span class="required" id="mobileError"></span></label>
+                    <input type="text" name="mobile" id="userMobile"/>
+                </div>
+                <div class="form-content">
+                    <label for="email">Email <span class="required" id="emailError"></span></label>
+                    <input type="text" name="email" id="userEmail"/>
+                </div>
+                <div class="form-content">
+                    <label for="password">New Password <span class="required" id="passwordError"></span></label>
+                    <input type="password" name="password" id="userPassword"/>
+                </div>
+                <div class="form-content">
+                    <label for="repassword">Confirm Password <span class="required" id="repasswordError"></span></label>
+                    <input type="password" name="repassword" id="userrePassword"/>
+                </div>
+                <button type="submit" class="submit" onclick="sumbitForm(event)">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
